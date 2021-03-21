@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="l-header">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="assets/img/panel-background2.jpg" style="width:100%", height="700px">
+              
+            </div>
+           
+            <div class="mySlides fade">
+              <img src="assets/img/panel-background.jpg" style="width:100%", height="700px">
+              
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/img/work-room.jpg" style="width:100%", height="700px">
+                
+              </div>
+          <br>
+           
+          <div style="text-align: center" >
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+        </div>
+        <nav class="nav bd-grid">
+            <!-- <div class="nav__toggle" id="nav__toggle">
+                <i class='bx bx-menu'></i>
+            </div> -->
+
+            <div>
+                <a href="#" class="nav__logo"><img src="assets/img/logo.png" height="200px" width="200px" alt=""></a>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#product" class="nav__link">Product</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="about section" id="about">
+                <h2 class="section-title">ABOUT US</h2>
+                <div class="about__all"> 
+                    <div class="about__left bd-grid">
+                        <h3>WHO ARE WE?</h3>
+                        <p class="p-long">We think we are good designers, we believe you won't be disappointed when you put your trust in us, we're here to help you have the best space.</p>
+                        <a href="#contact" class="btn">CONTACT US NOW</a>
+                        <h3 style="margin-top:200px">OUR MISSION</h3>
+                        <h4>What's WordPress?</h4>
+                        <p class="p-long">Our grantees and partners generosity truth, prevention nutrition involvement Ford Foundation. Enabler agenda results global leaders change economic independence; positive social change free expression our ambitions. Dedicated, humanitarian relief health fight against malnutrition momentum economic development. Vaccines, citizenry collaborative, harness non-partisan. Andrew Carnegie policymakers civic engagement fighting .</p>
+                    </div>
+                    
+                    <div class="about__right">
+                          <img src="assets/img/about-us.jpg" alt=""> 
+                          <h3 style="margin-top:40px">OUR EXPERIENCE</h3>
+                          <p class="p-long">Lasting change local solutions NGO, citizens of change, activist pursue these aspirations outcomes poverty social impact. Human being healthcare gun control, necessities, Action Against. Growth lasting change, making progress informal economies replicable. Efficient evolution nutrition social innovation education. Our grantees and partners, participatory monitoring proper resources .</p>
+                    </div>
+                </div>
+                <div class="about__team">
+                    <h3>MEET OUR TEAM</h3>
+                </div>    
+        </section>
+    </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" ><i class="bx bxs-chervon-up-circle"></i>Top</button>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
