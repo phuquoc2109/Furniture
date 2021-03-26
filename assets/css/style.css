@@ -203,6 +203,7 @@ h3{
     font-size: 110%;
     font-style: italic;
     text-align: center;
+    margin-bottom: 20px;
  }
 
  .member__img{
@@ -280,6 +281,56 @@ h3{
      margin-right: 20px;
  }
 
+ .about__team::after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+/* PRODUCT */
+ .product__img{
+     width: 600px;
+     height: 400px;
+     border-radius: 2%;
+     margin: 50px;
+     cursor: pointer;
+ }
+ .product__left{
+     float: left;
+ }
+ .product__right{
+     float: right;
+ }
+.product__social ul li{
+    list-style-type: none;
+}
+ .product__social{
+    position: absolute;
+    width: 4.5%;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translate(900%, -253%);
+    border-radius: 9%;
+    opacity: 0;
+    transition: all 0.7s;
+   }
+.product__social-link{
+   color: black;
+   font-size: 3rem;
+   padding-right: .40rem;
+}
+.product__social-link:hover{
+    color: rgb(3, 80, 151);
+}
+
+
+.product__left:hover .product__social,
+.product__left:active .product__social,
+.product__right:hover .product__social,
+.product__right:active .product__social{
+    transform: translate(853%, -252.5%);
+    opacity: 0.7;  
+}
 
 
 
