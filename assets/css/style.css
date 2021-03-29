@@ -20,6 +20,7 @@ body{
     top: 0; 
     width: 100%;
 }
+
 .nav__list{
     overflow: hidden;
     position: absolute;
@@ -33,7 +34,7 @@ body{
     display: block;
     text-align: center;
     padding: 14px 16px;
-    font-size: 20px;
+    font-size: 22px;
     width: 15%;
 }
 .nav__link{
@@ -41,7 +42,7 @@ body{
     text-decoration: none;
     color: black;
     padding: 4px;
-    transition: 1s;
+    transition: 0.5s;
 }
 .nav__link:hover{
     box-shadow: 0 4px rgb(243, 127, 127);
@@ -291,7 +292,7 @@ h3{
      width: 600px;
      height: 400px;
      border-radius: 2%;
-     margin: 50px;
+     margin: 50px 50px 50px 50px;
      cursor: pointer;
  }
  .product__left{
@@ -312,7 +313,7 @@ h3{
     transform: translate(900%, -253%);
     border-radius: 9%;
     opacity: 0;
-    transition: all 0.7s;
+    transition: all 0.5s;
    }
 .product__social-link{
    color: black;
@@ -320,7 +321,7 @@ h3{
    padding-right: .40rem;
 }
 .product__social-link:hover{
-    color: rgb(3, 80, 151);
+    color: rgb(255, 0, 0);
 }
 
 
@@ -331,6 +332,14 @@ h3{
     transform: translate(853%, -252.5%);
     opacity: 0.7;  
 }
+
+.product__project::after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ 
 
 
 
