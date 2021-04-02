@@ -333,6 +333,24 @@ h3{
     opacity: 0.7;  
 }
 
+.product__info{
+    text-align: center;
+}
+.product__name{
+    margin-top: -40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.product__rank{
+    color: rgb(255, 238, 5);
+}
+.product__price{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 20px;
+}
+
 .product__project::after{
     content: "";
     display: table;
