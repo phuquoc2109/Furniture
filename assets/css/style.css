@@ -294,9 +294,11 @@ h3{
      border-radius: 2%;
      margin: 50px 50px 50px 50px;
      cursor: pointer;
+     overflow: hidden;
  }
  .product__left{
      float: left;
+     overflow: hidden;
  }
  .product__right{
      float: right;
@@ -323,7 +325,15 @@ h3{
 .product__social-link:hover{
     color: rgb(255, 0, 0);
 }
+.product__left:hover img{
+    opacity: 0.9;
+    filter: brightness(110%) blur(0.5px);
+}
 
+.product__right:hover img{
+    opacity: 0.9;
+    filter: brightness(110%) blur(0.5px);
+}
 
 .product__left:hover .product__social,
 .product__left:active .product__social,
@@ -335,6 +345,7 @@ h3{
 
 .product__info{
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .product__name{
     margin-top: -40px;
@@ -356,7 +367,69 @@ h3{
     display: table;
     clear: both;
  }
+ 
+ /* CONTACT */
 
+form{
+    background-color: rgba(164, 195, 221, 0.4);
+    margin-left: 20%;
+    width: 80%;
+    height: 500px;
+    padding: 30px;
+    border-radius: 2%;
+    margin-bottom: 20px;
+}
+
+form .row{
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 150%;
+    color: #000000;
+}
+
+input, textarea{
+    outline: none;
+    padding: 10px;
+    background-color: rgba(46, 46, 46, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+input{
+    height: 50px; 
+}
+
+input[type=text], input[type=email] ,textarea{
+    width: 80%;
+    margin-left: -25%;
+    font-size: 100%;
+    transition: all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus ,textarea:focus{
+    color: #000000;
+    font-size: 120%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+form .row:last-child{
+    margin-left: 35%;
+} 
+
+iput[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 70%;
+}
  
 
 
