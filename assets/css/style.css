@@ -369,15 +369,51 @@ h3{
  }
  
  /* CONTACT */
+ #contact img{
+    position: absolute;
+    width: 1550px;
+    height: 700px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.information{
+    float: right;
+    justify-content: right;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.social__icons{
+    display: flex;
+    flex-direction: none;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.social__icons-link:hover{
+    color: #0058ca;
+}
 
 form{
-    background-color: rgba(164, 195, 221, 0.4);
-    margin-left: 20%;
-    width: 80%;
+    position: absolute;
+    margin-top: -50px;
+    width: 75%;
     height: 500px;
+    margin-left: -250px;
     padding: 30px;
     border-radius: 2%;
-    margin-bottom: 20px;
+    z-index: 100;
 }
 
 form .row{
@@ -424,11 +460,12 @@ form .row:last-child{
     margin-left: 35%;
 } 
 
-iput[type=submit]{
+input[type=submit]{
     font-weight: 700;
     font-size: 100%;
     border-radius: 5px;
-    width: 70%;
+    width: 55%;
+    margin-left: -100px;
 }
  
 
